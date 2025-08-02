@@ -39,7 +39,7 @@
    3. **Start the app in development mode:**
      ```bash
        npm run dev
-    ```
+     ```
     * The app will run at (http://localhost:5173) (Vite default) or as shown in your terminal.
 
  ## Usage:
