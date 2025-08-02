@@ -1,12 +1,85 @@
-# React + Vite
+# Online Library System
+ A modern React-based application to browse, search, add, and view details about books in an online library.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Features
+ * **Landing Page**: Welcome message with curated book categories and a selection of popular books.
 
-Currently, two official plugins are available:
+ * **Dynamic Browsing**: Filter books by category and search by title or author.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+ * **Book Details**: View title, author, description, and rating of selected books.
 
-## Expanding the ESLint configuration
+ * **Add Book**: Form to add a new book to the library (with validation), state managed by Redux Toolkit.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+ * **404 Not Found**: Custom page for nonexistent routes with navigation back to Home.
+
+ * **Responsive & Polished UI**: Mobile-friendly layout and animated interactions.
+
+ ## Technologies
+ * **React**
+ * ***Vite**
+ * **Redux Toolkit**
+ * **React Router**
+
+ ## Getting Started
+  
+  ### Prerequisites
+  + Node.js (v16 or higher recommended)
+  + npm (comes with Node.js)
+
+  ### Installation
+   1. **Clone the repository:**
+     ```bash
+       git clone (https://github.com/alankritip/Online-Library-System)
+       cd online-library
+     ```
+   2. **Install dependencies:**
+     ```bash
+       npm install
+     ```
+   3. **Start the app in development mode:**
+     ```bash
+       npm run dev
+    ```
+    * The app will run at (http://localhost:5173) (Vite default) or as shown in your terminal.
+
+ ## Usage:
+  * **Home**: View categories and popular books.
+  * **Browse Books**: Filter books by category or search by title/author. Click a book to view its details.
+  * **Add Book**: Use the navigation link to add new titles (all fields required).
+  * **Book Details**: Shows additional book info and lets you return to the browse list.
+  * **Invalid URLs**: Navigating to a non-existent page will show a 404 error with a link back home.
+
+ ## Folder Structure: 
+
+```plain
+  online-library/
+├── public/                      # Static files (favicon, etc.)
+│
+├── src/
+│   ├── assets/                  # Images or custom icons (optional)
+│   │
+│   ├── components/              # Reusable UI components
+│   │   ├── NavBar.jsx
+│   │
+│   ├── pages/                   # Route-based page components
+│   │   ├── HomePage.jsx
+│   │   ├── BrowseBooksPage.jsx
+│   │   ├── BookDetailsPage.jsx
+│   │   ├── AddBookPage.jsx
+│   │   └── NotFoundPage.jsx
+│   │
+│   ├── redux/                   # Redux Toolkit state management
+│   │   ├── booksSlice.js
+│   │   └── store.js
+│   │
+│   ├── App.jsx                  # Main app shell (sets up routing)
+│   ├── App.css                  # Global styles (imported in App.jsx)
+│   └── main.jsx                 # React entry, Redux + Router providers
+│
+├── package.json
+├── README.md
+└── vite.config.js
+```
+
+ ## License
+    This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
