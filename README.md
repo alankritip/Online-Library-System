@@ -28,16 +28,16 @@
 
   ### Installation
    1. **Clone the repository:**
-     ```bash
+     ```plain
        git clone (https://github.com/alankritip/Online-Library-System)
        cd online-library
      ```
    2. **Install dependencies:**
-     ```bash
+     ```plain
        npm install
      ```
    3. **Start the app in development mode:**
-     ```bash
+     ```plain
        npm run dev
      ```
     * The app will run at (http://localhost:5173) (Vite default) or as shown in your terminal.
